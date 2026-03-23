@@ -9,8 +9,6 @@
   "dependencies": {
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest",
-    "framer-motion": "latest",
-    "lucide-react": "latest"
+    "next": "latest"
   }
 }
