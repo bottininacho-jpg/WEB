@@ -6,18 +6,22 @@ export default function StudioIB() {
   const [loading, setLoading] = useState(false);
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans p-6 flex flex-col items-center justify-center">
-      <motion.header 
-        initial={{ opacity: 0, y: -20 }} 
-        animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-12"
-      >
-        <h1 className="text-6xl font-black tracking-tighter">STUDIO <span className="text-orange-500 italic">iB</span></h1>
-        <p className="text-[10px] tracking-[0.4em] text-zinc-500 uppercase font-bold mt-2">Arquitectura + Inteligencia Artificial</p>
-      </motion.header>
+    <div className="min-h-screen bg-black text-white font-sans p-6 flex flex-col items-center justify-center text-center">
+      <header className="mb-12">
+        <motion.h1 
+          initial={{ opacity: 0, y: -20 }} 
+          animate={{ opacity: 1, y: 0 }}
+          className="text-6xl font-black tracking-tighter"
+        >
+          STUDIO <span className="text-orange-500 italic">iB</span>
+        </motion.h1>
+        <p className="text-[10px] tracking-[0.4em] text-zinc-500 uppercase font-bold mt-2">
+          Arquitectura + Inteligencia Artificial
+        </p>
+      </header>
 
       <div className="w-full max-w-md space-y-6">
-        <div className="p-10 border-2 border-dashed border-zinc-800 rounded-[32px] text-center bg-zinc-900/50">
+        <div className="p-10 border-2 border-dashed border-zinc-800 rounded-[32px] bg-zinc-900/50">
           <Camera className="mx-auto mb-4 text-zinc-600" size={40} />
           <p className="text-sm text-zinc-400 font-medium">Subí el ambiente a transformar</p>
         </div>
